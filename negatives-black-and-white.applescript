@@ -15,6 +15,7 @@ tell application "Pixelmator Pro Trial"
 			tell its color adjustments
 				set its invert to true
 				set its black and white to true
+				set its sharpen to 50
 			end tell
 		end tell
 		-- flip horizontally
@@ -27,7 +28,7 @@ tell application "Pixelmator Pro Trial"
 		-- return
 		-- Export the images to the location chosen previously as Pixelmator Pro files
 		export currentImage to file ((exportLocation as text) & Â
-			name of currentImage & "-edited" & ".png") as PNG
+			name of currentImage & "-edited" & ".jpg") as JPEG
 		-- Close the current image without saving
 		close currentImage without saving
 	end repeat

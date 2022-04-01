@@ -20,7 +20,7 @@ tell application "Pixelmator Pro Trial"
 		auto color balance currentImage
 		-- Export the images to the location chosen previously as Pixelmator Pro files
 		export currentImage to file ((exportLocation as text) & Â
-			name of currentImage & "-edited" & ".png") as PNG
+			name of currentImage & "-edited" & ".jpg") as JPEG
 		-- Close the current image without saving
 		close currentImage without saving
 	end repeat
