@@ -1,4 +1,4 @@
-tell application "Pixelmator Pro Trial"
+tell application "Pixelmator Pro"
 	-- Open a prompt that lets you pick multiple Pixelmator Pro files to process 
 	-- and save references to all those images in the originalImages variable
 	set originalImages to choose file with prompt Â
